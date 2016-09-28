@@ -200,6 +200,20 @@ li {
 		opacity: 0.8;
 	}
 
+	#contactMePanel {
+		width: 300px;
+		height: 100px;
+		position: fixed;
+		border-width: 0px;
+	  	top: 45%;
+	  	background-color: black;
+	  	opacity: 0.7;
+	  	left: 50%;
+	  	margin-left: 10px;
+	  	transform: translate(-50%, -50%);
+	  	display: none;
+	}
+
 	body {
 		background: radial-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%), url("../images/IMG_6143.jpg") no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -226,6 +240,20 @@ li {
 		color: white;
 		padding-left: 7px;
 		opacity: 0.8;
+	}
+
+	#contactMePanel {
+		width: 300px;
+		height: 100px;
+		position: fixed;
+		border-width: 0px;
+	  	top: 45%;
+	  	background-color: black;
+	  	opacity: 0.7;
+	  	left: 50%;
+	  	margin-left: 10px;
+	  	transform: translate(-50%, -50%);
+	  	display: none;
 	}
 
 	body {
