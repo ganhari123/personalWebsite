@@ -1,7 +1,7 @@
-
 html { 
 	height: 100%;
 }
+
 body {
 	background: radial-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.45) 100%), url("../images/IMG_6143.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -34,7 +34,6 @@ body {
 li {
 	display: inline;
 	font-size: 20px;
-	padding-right: 15px;
 }
 
 .menuitem {
@@ -62,8 +61,8 @@ li {
 	font-size: 30px;
 	float: none;
 	color: white;
-	padding-left: 30px;
 	opacity: 0.8;
+	padding-left: 60px;
 }
 #subTit {
 	font-size: 15px;
@@ -73,20 +72,58 @@ li {
 }
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 667px) {
+  and (min-width: 1px) 
+  and (max-width: 436px) {
   	li {
 		display: inline;
-		font-size: 10px;
+		font-size: 18px;
 		padding-right: 15px;
 	}
 
 	#title {
-		font-size: 20px;
+		font-size: 25px;
 		float: none;
 		color: white;
-		padding-left: 5px;
+		padding-left: 7px;
 		opacity: 0.8;
+	}
+
+	body {
+		background: radial-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%), url("../images/IMG_6143.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: right;
+		height: 100%;
+	}
+  }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px) {
+  	li {
+		display: inline;
+		font-size: 18px;
+		padding-right: 15px;
+	}
+
+	#title {
+		font-size: 25px;
+		float: none;
+		color: white;
+		padding-left: 7px;
+		opacity: 0.8;
+	}
+
+	body {
+		background: radial-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%), url("../images/IMG_6143.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: right;
+		height: 100%;
 	}
   }
 
