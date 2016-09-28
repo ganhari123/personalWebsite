@@ -52,6 +52,27 @@ li {
 	background-color: gray;
 }
 
+.menuitem:visited {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: gray;
+}
+
+.menuitem:active {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: gray;
+}
+
+.menuitem:focus {
+	color: white;
+	opacity: 0.8;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 #menuHolder {
 	text-align: center;
 	margin-top: 28px;
@@ -63,12 +84,43 @@ li {
 	color: white;
 	opacity: 0.8;
 	padding-left: 60px;
+	cursor: pointer;
 }
 #subTit {
 	font-size: 15px;
 	float: none;
 	color: white;
 	opacity: 0.8;
+}
+
+#contactMePanel {
+	width: 300px;
+	height: 100px;
+	position: fixed;
+	border-width: 0px;
+  	top: 45%;
+  	background-color: black;
+  	opacity: 0.7;
+  	left: 50%;
+  	margin-left: 20px;
+  	transform: translate(-50%, -50%);
+  	display: none;
+}
+
+#contactMe {
+	
+	background-color: black;
+	border-width: 0px;
+  	color: white;
+  	font-size: 12px;
+  /* bring your own prefixes */
+}
+
+#panelHeading {
+	font-size: 25px;
+	color: white;
+	border-width: 0px;
+	background-color: black !important
 }
 
 @media only screen 
@@ -86,6 +138,7 @@ li {
 		color: white;
 		padding-left: 7px;
 		opacity: 0.8;
+		cursor: pointer;
 	}
 
 	body {
@@ -114,6 +167,7 @@ li {
 		color: white;
 		padding-left: 7px;
 		opacity: 0.8;
+	    cursor: pointer;
 	}
 
 	body {
