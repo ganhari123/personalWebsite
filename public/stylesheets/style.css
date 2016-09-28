@@ -127,12 +127,42 @@ li {
 	}
   }
 
+
+
 @media only screen 
-  and (min-device-width: 1px) 
-  and (max-device-width: 667px) {
+  and (min-device-width: 370px) 
+  and (max-device-width: 436px) {
   	li {
 		display: inline;
-		font-size: 18px;
+		font-size: 17px;
+		padding-right: 15px;
+	}
+
+	#title {
+		font-size: 25px;
+		float: none;
+		color: white;
+		padding-left: 7px;
+		opacity: 0.8;
+	}
+
+	body {
+		background: radial-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%), url("../images/IMG_6143.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: right;
+		height: 100%;
+	}
+  }
+
+@media only screen 
+  and (min-device-width: 1px) 
+  and (max-device-width: 370px) {
+  	li {
+		display: inline;
+		font-size: 12px;
 		padding-right: 15px;
 	}
 
