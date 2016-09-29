@@ -8,25 +8,6 @@ $(document).ready(function() {
     $('#proj').css('border-bottom', 'none');
   });
 
-  $('#title').click(function(){
-    $('#contactMePanel').hide(100);
-    $('#resume').hide(100);
-    $('#projects').hide(100);
-    $('#con').css('border-bottom', 'none');
-    $('#res').css('border-bottom', 'none');
-    $('#proj').css('border-bottom', 'none');
-  });
-
-
-  $("#subTit").click(function(){
-  	$('#contactMePanel').hide(100);
-  	$('#resume').hide(100);
-  	$('#projects').hide(100);
-    $('#con').css('border-bottom', 'none');
-    $('#res').css('border-bottom', 'none');
-    $('#proj').css('border-bottom', 'none');
-  });
-
   $('#res').click(function(){
   	$('#contactMePanel').hide(100);
   	$('#resume').show(100);
