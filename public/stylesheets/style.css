@@ -101,12 +101,12 @@ menuitem:visited {
 	opacity: 0.8;
 }
 
-.panel.panel-default{
+#contactMePanel {
 	width: 350px;
-	height: 100px;
+	height: 0px;
 	position: fixed;
 	border-width: 0px;
-  	top: 45%;
+  	top: 50px;
   	background-color: black;
   	opacity: 0.7;
   	left: 50%;
@@ -121,6 +121,29 @@ menuitem:visited {
 	background-color: black;
 	border-width: 0px;
   	color: white;
+  	height: 115px;
+  	border-radius: 10px;
+  	font-size: 12px;
+  /* bring your own prefixes */
+}
+
+#subResume {
+	
+	background-color: black;
+	border-width: 0px;
+  	color: white;
+  	height: 45px;
+  	border-radius: 10px;
+  	font-size: 12px;
+  /* bring your own prefixes */
+}
+
+#subProjects {
+	
+	background-color: black;
+	border-width: 0px;
+  	color: white;
+  	height: 45px;
   	border-radius: 10px;
   	font-size: 12px;
   /* bring your own prefixes */
@@ -142,8 +165,24 @@ menuitem:visited {
   	top: 60px;
   	background-color: black;
   	opacity: 0.7;
-  	left: 40%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
   		border-radius: 10px;
+  	display: none;
+}
+
+#projects {
+	width: 330px;
+	height: 20px;
+	position: fixed;
+	border-width: 0px;
+  	top: 60px;
+  	background-color: black;
+  	opacity: 0.7;
+  	left: 50%;
+  		border-radius: 10px;
+  	margin-left: 20px;
+  	transform: translate(-50%, -50%);
   	display: none;
 }
 
