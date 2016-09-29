@@ -94,14 +94,12 @@ menuitem:visited {
 	color: white;
 	opacity: 0.8;
 	padding-left: 60px;
-	cursor: pointer;
 }
 #subTit {
 	font-size: 15px;
 	float: none;
 	color: white;
 	opacity: 0.8;
-	cursor: pointer;
 }
 
 .panel.panel-default{
