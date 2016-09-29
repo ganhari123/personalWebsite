@@ -25,4 +25,13 @@ $(document).ready(function() {
   	$('#con').css('border-bottom', 'none');
   	$('#res').css('border-bottom', 'none');
   });
+
+  $('#dummyPanel').click(function(){
+  	$('#contactMePanel').hide(100);
+  	$('#resume').hide(100);
+  	$('#projects').hide(100);
+  	$('#proj').css('border-bottom', 'none');
+  	$('#con').css('border-bottom', 'none');
+  	$('#res').css('border-bottom', 'none');
+  });
 });
