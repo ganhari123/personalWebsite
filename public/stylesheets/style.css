@@ -192,6 +192,15 @@ li {
 	border-width:0px;
 	text-align: center;
 	overflow: scroll;
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar { 
+	background-color: black;
+	opacity: 0.6;
+ }
+::-webkit-scrollbar-thumb {
+	background-color: #1e1e1e;
 }
 #dummyPanel {
 	position: fixed;

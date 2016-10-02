@@ -20,6 +20,10 @@ $(document).ready(function() {
   });
 
   $('#proj').click(function(){
+
+  	$.get('/projects', function(data, status){
+  		console.log(data);
+  	});
   	$('#contactMePanel').hide(2);
   	$('#resume').hide(2);
   	$('#projects').show(2);
