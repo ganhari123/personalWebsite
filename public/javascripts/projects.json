@@ -1,25 +1,25 @@
 {"projects":[
-    {"name":"John", 
-     "date":"Doe", 
-     "description": ""
+	{"name":"Kitchenette", 
+     "date":"Summer 2016", 
+     "description": "Kitchenette was a project that was done for fun mainly to learn different javascript libraries like passport.js and improve and enhance my abilities in node, jquery, css, javascript and mysql. The goal of the website was to create a social area where kitchen recipes are shared and rated on."
     },
-    {"name":"John", 
-     "date":"Doe", 
-     "description": ""
+    {"name":"Pandango",
+     "date":"Spring 2016", 
+     "description": "Pandango is a mobile app/website that allows users to rate and like movies as well as share the movies that they have watched with other friends. An interesting thing about pandango is that it has facebook login implemented and it uses the google api to locate movie theaters near your location or the address that you put in. This is a project that is done in a Georgia Tech course called CS 2340."
     },
-    {"name":"John", 
-     "date":"Doe", 
-     "description": ""
+    {"name":"HackFSU Hackathon 2015", 
+     "date":"Spring 2016", 
+     "description": "In this hackathon I wanted to dabble around with a game engine (mostly Unity). Though the idea wasnt splendid, it did help me gain a better idea of how to work with unity. Though the time was sparse, I was able to create a game that connected to a node server and recieved commands from an android app which acted like a remote control. This was to control the character in the game. The goal of the game was a maze and you had to find your way out of that maze."
     },
-    {"name":"John", 
-     "date":"Doe", 
-     "description": ""
+    {"name":"HackDuke Hackathon 2015", 
+     "date":"Fall 2015", 
+     "description": "The title of the project is called TalentFund, the goal of TalentFund was to create a crowd sourcing website to sponsor underprivelaged children all around the world for an education. The idea came about because of a small trust that my family runs back in India. On a small scale, they sponsor and also get their friends and neighbors to sponsor the kids at the local village school. I wanted to take it to a much larger level in an attempt to bridge the gap between the rich and the poor."
     },
-    {"name":"John", 
-     "date":"Doe", 
-     "description": ""
+    {"name":"HackFSU Hackathon 2014", 
+     "date":"Spring 2014", 
+     "description": "This was one of the first hackathons I went to. In this hackathon, we tried to come up with an interesting way to exchange resumes at careerfairs. The goal was to make it so that with one handshake between employer and student, the resume of that student could be sent to the employer. The 3 components to the application were the android app, the myo api and the website. My part mainly involved working with the android interface. Interestingly, it was my first doing android dev!"
     },
-    {"name":"John", 
+    {"name":"Sarah", 
      "date":"Doe", 
      "description": ""
     }
