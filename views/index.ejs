@@ -12,29 +12,26 @@
   </script>
 </head>
 
-<body id="bodyMain">
+<body id="bodyMain" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
-          <ul id="menuItems">
-            <li><a id="res" class="menuitem" >Resume</a></li>
-            <li><a id="proj" class="menuitem">Projects</a></li> 
-            <li><a id="con" class="menuitem">Contact Me</a></li> 
+          <ul class="nav navbar-nav"id="menuItems">
+            <li><a id="con" href="#contactMePanel" class="menuitem">Contact Me</a></li> 
+            <li><a id="res" href="#resume" class="menuitem" >Resume</a></li>
+            <li><a id="proj" href="#projects" class="menuitem">Projects</a></li> 
+            
           </ul>
 </nav>
 
-<div id="contactMePanel" class="panel panel-default">
-  <div id="contactMe" class="panel-body"><p id="panel_content">Phone No: +1 404-693-6827<br><br> Email Address: ganapathy.hari.narayan@gatech.edu<br><br>Mailing Address: 930 Spring Street NW Atlanta GA 30309</p></div>
+<div id="contactMePanel" class="container-fluid">
+  <div id="contactMe" ><p >Phone No: +1 404-693-6827<br><br> Email Address: ganapathy.hari.narayan@gatech.edu<br><br>Mailing Address: 930 Spring Street NW Atlanta GA 30309</p></div>
 </div>
 
-<div id="dummyPanel" class="panel panel-default">
-  <div id="dummy" class="panel-body"><p id="panel_content"></p></div>
+<div id="resume"class="container-fluid">
+  <div id="subResume" ><p >Download a pdf copy of my resume over <a target="_blank" href="/images/Resume_Final.pdf">here</a></p></div>
 </div>
 
-<div id="resume" class="panel panel-default">
-  <div id="subResume" class="panel-body"><p id="panel_content">Download a pdf copy of my resume over <a target="_blank" href="/images/Resume_Final.pdf">here</a></p></div>
-</div>
-
-<div id="projects" class="panel panel-default" style="display: none;">
+<div id="projects" class="container-fluid">
 
    <div class="row" style="margin-top: 50px;">
      <div class="col-md-1">
