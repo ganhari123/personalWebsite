@@ -39,7 +39,7 @@ $(document).ready(function() {
 
   		$('#contactMePanel').hide(2);
   		$('#dummyPanel').css('background', 'black');
-  		$('#dummyPanel').css('opacity', '0.6');
+  		$('#dummyPanel').css('opacity', '0.3');
 	  	$('#resume').hide(2);
 	  	$('#projects').show(2);
 	  	$('#proj').css('border-bottom', '4px solid #7f0000');
