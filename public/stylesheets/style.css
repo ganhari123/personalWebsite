@@ -187,12 +187,15 @@ li {
 	width: 100%;
 	top: 50px;
 	height: 80%;
-	background: black;
-	opacity: 0.6;
+	opacity: 0.3;
 	border-width:0px;
 	text-align: center;
-	overflow: scroll;
+	overflow-y: scroll;
 	overflow-x: hidden;
+}
+
+.panel-heading {
+	font-size: 20px;
 }
 
 ::-webkit-scrollbar { 
@@ -209,6 +212,7 @@ li {
 	top: 50px;
 	height: 100%;
 	background: none;
+	opacity: 0.6;
 	border-width:0px;
 }
 
