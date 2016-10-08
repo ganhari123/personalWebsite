@@ -12,6 +12,60 @@ body {
 	overflow-x: hidden;
 }
 
+#bodyTitle {
+	background: radial-gradient(rgba(84,84,84,0.4) 0%, rgba(0,0,0,0) 100%);
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+h1 {
+	position: relative;
+	top: 40%;
+}
+
+h3 {
+	position: relative;
+	top: 40%;
+}
+
+#navMenu {
+	background: black;
+	opacity: 0.6;
+}
+
+.nav.navbar-nav {
+     float: left;
+ }
+ .nav.navbar-nav {
+     clear: left;
+     float: left;
+     margin: 0;
+     padding: 0;
+     position: relative;
+     left: 50%;
+     text-align: center;
+ }
+ .nav.navbar-nav > li {
+     position: relative;
+     right: 50%;
+ }
+ .nav.navbar-nav li {
+    text-align: left
+ }
+
+ #menu {
+ 	display: none;
+ 	background-color: black;
+ 	opacity: 0.7;
+ }
+
+ #menuHolder {
+ 	text-align: center;
+ }
+
 #contactMePanel {
 	height: 500px;
 	width: 100%;
@@ -41,6 +95,7 @@ body {
 	color: white;
 	border: none;
 	background: none;
+	display: none;
 }
 
 #subResume {
@@ -61,4 +116,5 @@ body {
 	background: none;
 	color: white;
 	border: none;
+	display: none;
 }

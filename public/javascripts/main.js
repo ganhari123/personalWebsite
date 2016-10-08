@@ -1,4 +1,37 @@
 $(document).ready(function() {
+
+	window.sr = ScrollReveal();
+	sr.reveal('#navMenu', { duration: 500 , reset: true, origin: 'top', scale: 1.0}, 50);
+
+	$(window).scroll(function () {
+	      //if you hard code, then use console
+	      //.log to determine when you want the 
+	      //nav bar to stick.  
+	    console.log($(window).scrollTop());
+	    console.log($('#bodyTitle').height());
+	    if ($(window).scrollTop() > $('#bodyTitle').height() - 200) {
+	      $('#navMenu').addClass('navbar-fixed-top');
+	    }
+	    if ($(window).scrollTop() < $('#bodyTitle').height() - 200) {
+	     	$('#navMenu').removeClass('navbar-fixed-top');
+	    }
+ 
+	    if ($(window).scrollTop() > $('#bodyTitle').height() - 200) {
+	      $('#navMenu').show();
+	      $('#menu').show();
+	      console.log('I AM IN');
+	    }
+	    if ($(window).scrollTop() < $('#bodyTitle').height() - 200) {
+	     	$('#navMenu').hide();
+	     	$('#menu').hide();
+	    }
+
+	    $("#bodyTitle").css("opacity", 1 - $(window).scrollTop() / 500);
+	   	$("#nameTitle").css("opacity", 1 - $(window).scrollTop() / 500);
+	   	$("#positionSubtitle").css("opacity", 1 - $(window).scrollTop() / 500); 
+	});
+
+}); 
   /*$('#con').click(function(){
     $('#contactMePanel').show(2);
     $('#resume').hide(2);
@@ -59,4 +92,3 @@ $(document).ready(function() {
   	$('#con').css('border-bottom', 'none');
   	$('#res').css('border-bottom', 'none');
   });*/
-});
