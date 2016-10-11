@@ -3,38 +3,46 @@
 <head>
   <title>Resume</title>
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <link rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon'/ >
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" rel="stylsheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="/javascripts/jquery-2.1.4.js"></script>
   <script src="/javascripts/main.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
 </head>
 
-<body id="bodyMain" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="bodyMain">
 
-<div id="bodyTitle"  class="container-fluid">
-  <h1 id="nameTitle">Ganapathy Hari Narayan</h1>
-  <h3 id="positionSubtitle">(Software Developer)</h3>
+<div id="bodyTitle" class="container-fluid">
+  <div id="itemContainer">
+    <h1 id="nameTitle">Ganapathy Hari Narayan</h1>
+    <h3 id="positionSubtitle">(Software Developer)</h3><br>
+    
+  </div>
+  <button class="enterSite">ENTER</button>
 </div>
 
 <nav id="navMenu" class="navbar navbar-inverse ">
-          <ul class="nav navbar-nav"id="menuItems">
-            <li><a id="con" href="#contactMePanel" class="menuitem">Contact Me</a></li> 
-            <li><a id="res" href="#resume" class="menuitem" >Resume</a></li>
-            <li><a id="proj" href="#projects" class="menuitem">Projects</a></li> 
-            
+          <ul id="menuItems">
+            <li><a id="con" class="menuitem">Contact Me</a></li> 
+            <li><a id="res" class="menuitem" >Resume</a></li>
+            <li><a id="proj" class="menuitem">Projects</a></li>             
           </ul>
 </nav>
 
 <div id="contactMePanel" class="container-fluid">
   <div id="contactMe" ><p >Phone No: +1 404-693-6827<br><br> Email Address: ganapathy.hari.narayan@gatech.edu<br><br>Mailing Address: 930 Spring Street NW Atlanta GA 30309</p></div>
+  <div id="subResume" ><p >Download a pdf copy of my resume over <a target="_blank" href="/images/Resume_Final.pdf">here</a></p></div>
 </div>
 
 <div id="resume"class="container-fluid">
-  <div id="subResume" ><p >Download a pdf copy of my resume over <a target="_blank" href="/images/Resume_Final.pdf">here</a></p></div>
+  
 </div>
 
 <div id="projects" class="container-fluid">
@@ -93,15 +101,15 @@
 </div>
 
 
-<nav id="menu" class="navbar navbar-inverse navbar-fixed-bottom">
-  <div id="menuHolder" class="container-fluid">
-    <a id="title" class="navbar-brand">Ganapathy Hari Narayan</a>
-    <br>
-    <a id="subTit" class="navbar-brand"> (Software Developer)</a>
-  </div>
+<nav  id="TitleMenu" class="navbar navbar-inverse ">
+        <p id="mainTitle">Ganapathy Hari Narayan<br><p style="font-size: 20px;">(Software Engineer)</p></p>
+
 </nav>
 
-<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+<script>
+  //sr.reveal('#navMenu', { duration: 500 , reset: true, origin: 'top', scale: 1.0, easing   : 'ease-in-out'}, 50);
+  //sr.reveal('#TitleMenu', { duration: 500 , reset: true, origin: 'bottom', scale: 1.0}, 50);
+</script>
 </body>
 
 </html>

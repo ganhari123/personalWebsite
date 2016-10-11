@@ -1,37 +1,103 @@
 $(document).ready(function() {
 
-	window.sr = ScrollReveal();
-	sr.reveal('#navMenu', { duration: 500 , reset: true, origin: 'top', scale: 1.0}, 50);
+	
 
-	$(window).scroll(function () {
-	      //if you hard code, then use console
-	      //.log to determine when you want the 
-	      //nav bar to stick.  
-	    console.log($(window).scrollTop());
-	    console.log($('#bodyTitle').height());
-	    if ($(window).scrollTop() > $('#bodyTitle').height() - 200) {
-	      $('#navMenu').addClass('navbar-fixed-top');
-	    }
-	    if ($(window).scrollTop() < $('#bodyTitle').height() - 200) {
-	     	$('#navMenu').removeClass('navbar-fixed-top');
-	    }
- 
-	    if ($(window).scrollTop() > $('#bodyTitle').height() - 200) {
-	      $('#navMenu').show();
-	      $('#menu').show();
-	      console.log('I AM IN');
-	    }
-	    if ($(window).scrollTop() < $('#bodyTitle').height() - 200) {
-	     	$('#navMenu').hide();
-	     	$('#menu').hide();
-	    }
 
-	    $("#bodyTitle").css("opacity", 1 - $(window).scrollTop() / 500);
-	   	$("#nameTitle").css("opacity", 1 - $(window).scrollTop() / 500);
-	   	$("#positionSubtitle").css("opacity", 1 - $(window).scrollTop() / 500); 
+	// $(window).scroll(function () {
+	//       //if you hard code, then use console
+	//       //.log to determine when you want the 
+	//       //nav bar to stick.  
+ // 		//console.log($(window).scrollTop());
+ // 		//console.log($('#bodyTitle').height());
+	//     if ($(window).scrollTop() > $('#bodyTitle').height() - 1) {
+	//       $('#navMenu').show();
+	//       $('#navMenu').addClass('navbar-fixed-top');
+	//       $('#itemContainer').hide();
+	//       $('.enterSite').hide();
+	     
+	//       console.log('in');
+	//     }
+	//     if ($(window).scrollTop() < $('#bodyTitle').height() - 1) {
+	//     	$('#navMenu').hide();
+	//     	$('#navMenu').removeClass('navbar-fixed-top');
+	//     	$('#itemContainer').show();
+	//     	$('.enterSite').show();
+	//     }
+
+
+	//     if ($(window).scrollTop() > $('#bodyTitle').height() - 1) {
+
+	//       $('#TitleMenu').show();
+	//       $('#TitleMenu').addClass('navbar-fixed-bottom');
+	//     }
+	//     if ($(window).scrollTop() < $('#bodyTitle').height() - 1) {
+
+	//      	$('#TitleMenu').hide();
+	//      	$('#TitleMenu').removeClass('navbar-fixed-bottom');
+	//     }
+
+	//     //$("#bodyTitle").css("opacity", 0.8 - $(window).scrollTop() / 400);
+	//    	$("#nameTitle").css("opacity", 0.8 - $(window).scrollTop() / 400);
+	//    	$("#positionSubtitle").css("opacity", 0.8 - $(window).scrollTop() / 400);
+	//    	$(".enterSite").css("opacity", 0.3 - $(window).scrollTop() / 50);
+	//    	console.log(0.4 - ($(window).scrollTop() + $(window).height()) / 700);
+	//    	//$("#contactMePanel").css("opacity", 0.1 + ($(window).scrollTop()) / 5000); 
+	// });
+
+	$('.enterSite').click(function(){
+		$('#bodyTitle').animate({opacity: 0}, 1000, function(){
+			$('#bodyTitle').hide();
+		});
+		
+		setTimeout(
+		  function() 
+		  {
+		    //do something special
+		    $('#navMenu').show(500);
+	    	$('#navMenu').addClass('navbar-fixed-top');
+	    	$('#TitleMenu').show(500);
+	        $('#TitleMenu').addClass('navbar-fixed-bottom');
+	    	
+		  }, 500);		
+
 	});
 
+	$('#TitleMenu').click(function(){
+		
+		$('#navMenu').hide(500);
+	    $('#navMenu').removeClass('navbar-fixed-top');
+	    $('#TitleMenu').hide(500);
+	    $('#TitleMenu').removeClass('navbar-fixed-bottom');
+		setTimeout(
+		  function() 
+		  {
+		    //do something special
+		    $('#bodyTitle').show(0, function(){
+		    	$('#bodyTitle').animate({opacity: 0.8}, 1000);
+		    });
+	    	
+		  }, 500);
+	});
+
+	// $('#TitleMenu').click(function(){
+	// 	$('html, body').animate({
+	// 	    scrollTop: 0
+	// 	 }, 1000);
+	// });
+
+	$('#bodyTitle').mousemove(function(event){
+    	$('.enterSite').css('opacity', '0.3');
+    	timeout = setTimeout(function() {
+        	console.log('Mouse idle for 3 sec');
+        	$('.enterSite').css('opacity', '0');
+    	}, 2000);
+	});
+
+
+
+
 }); 
+
   /*$('#con').click(function(){
     $('#contactMePanel').show(2);
     $('#resume').hide(2);
