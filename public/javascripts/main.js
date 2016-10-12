@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  /*$('#con').click(function(){
+  $('#con').click(function(){
     $('#contactMePanel').show(2);
     $('#resume').hide(2);
     $('#projects').hide(2);
@@ -58,5 +58,5 @@ $(document).ready(function() {
   	$('#proj').css('border-bottom', 'none');
   	$('#con').css('border-bottom', 'none');
   	$('#res').css('border-bottom', 'none');
-  });*/
+  });
 });
