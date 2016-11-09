@@ -216,8 +216,16 @@ li {
 #projects {
 	height: 100%;
 	width: 100%;
-	background: none;
 	color: white;
-	border: none;
+	opacity: 0.0;
 	display: none;
+}
+
+#projectInfo {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: black;
+	border-radius: 5px;
 }

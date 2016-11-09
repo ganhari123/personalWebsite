@@ -24,6 +24,13 @@ $(document).ready(function() {
 		show('#projects');
 	});
 
+	$('#con').click(function(){
+		console.log("HELLO");
+		$('#contactMePanel').show();
+		$('#contactMePanel').css('opacity', '0.6');
+		whichOne = '#contactMePanel';
+	});
+
 	$('#bodyTitle').mousemove(function(event){
     	$('.enterSite').css('opacity', '0.7');
     	timeout = setTimeout(function() {
