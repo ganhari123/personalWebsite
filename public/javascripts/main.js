@@ -4,7 +4,23 @@ $(document).ready(function() {
 	var whichOne = '';
 
 	$('.enterSite').click(function(){
-		show();
+		$('#bodyTitle').slideUp(500);
+		
+		setTimeout(
+		  function() 
+		  {
+		    //do something special
+		    $('#navMenu').show(0, function(){
+		    	$('#navMenu').animate({opacity: 0.6}, 1000);
+		    });
+		    
+	    	$('#navMenu').addClass('navbar-fixed-top');
+	    	$('#TitleMenu').show(0, function(){
+	    		$('#TitleMenu').animate({opacity: 0.6}, 1000);
+	    	});
+	    	
+	        $('#TitleMenu').addClass('navbar-fixed-bottom');
+		  }, 500);
 
 	});
 
@@ -13,23 +29,61 @@ $(document).ready(function() {
 	});
 
 	$('.Contact').click(function(){
-		show('#contactMePanel');
+		showMe('#contactMePanel');
 	});
 
 	$('.Resume').click(function(){
-		show('#resume');
+		showMe('#resume');
 	});
 
 	$('.Project').click(function(){
-		show('#projects');
+		showMe('#projects');
+		$.get('/projects', function(data, status){
+	      console.log(data);
+	      $('.row > .col-md-5 > .panel.panel-default > .panel-heading').each(function(index, value){
+	        $(this).text(data.projects[index].name);
+	      });
+
+	      $('.row > .col-md-5 > .panel.panel-default > .panel-body').each(function(index, value){
+	        $(this).text(data.projects[index].description);
+	      });
+	      	$('.row > .col-md-10 > .panel.panel-default > .panel-body').text(data.projects[4].description);
+	    	$('.row > .col-md-10 > .panel.panel-default > .panel-heading').text(data.projects[4].name);
+	    });
 	});
 
 	$('#con').click(function(){
 		console.log("HELLO");
-		$('#contactMePanel').show();
-		$('#contactMePanel').css('opacity', '0.6');
+		showMe('#contactMePanel');
+		$('#projects').hide();
+		$('#resume').hide();
 		whichOne = '#contactMePanel';
 	});
+
+	$('#proj').click(function(){
+		showMe('#projects');
+		$('#contactMePanel').hide();
+		$('#resume').hide();
+	    $.get('/projects', function(data, status){
+	      console.log(data);
+	      $('.row > .col-md-5 > .panel.panel-default > .panel-heading').each(function(index, value){
+	        $(this).text(data.projects[index].name);
+	      });
+
+	      $('.row > .col-md-5 > .panel.panel-default > .panel-body').each(function(index, value){
+	        $(this).text(data.projects[index].description);
+	      });
+	      	$('.row > .col-md-10 > .panel.panel-default > .panel-body').text(data.projects[4].description);
+	    	$('.row > .col-md-10 > .panel.panel-default > .panel-heading').text(data.projects[4].name);
+	    });
+    
+  	});
+
+  	$('#res').click(function(){
+  		showMe('#resume');
+  		$('#contactMePanel').hide();
+		$('#projects').hide();
+  	});
 
 	$('#bodyTitle').mousemove(function(event){
     	$('.enterSite').css('opacity', '0.7');
@@ -39,7 +93,7 @@ $(document).ready(function() {
     	}, 2000);
 	});
 
-	function show(id) {
+	function showMe(id) {
 		$('#bodyTitle').slideUp(500);
 		
 		setTimeout(
