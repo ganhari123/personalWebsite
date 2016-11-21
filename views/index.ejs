@@ -3,40 +3,55 @@
 <head>
   <title>Resume</title>
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <link rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon'/ >
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" rel="stylsheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="/javascripts/jquery-2.1.4.js"></script>
-  <script src="/javascripts/main.js">
-  </script>
+  <script src="/javascripts/main.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
 </head>
 
 <body id="bodyMain" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
+<div id="bodyTitle" class="container-fluid">
+  <div id="itemContainer">
+    <h1 id="nameTitle">Ganapathy Hari Narayan</h1>
+    <h3 id="positionSubtitle">(Software Developer)</h3><br>
+    <div id="buttonDisplay">
+      <button class="Resume">Resume</button>
+      <button class="Contact">Contact Me</button>
+      <button class="Project">Projects</button>
+    </div>
+  </div>
+  <button class="enterSite">ENTER</button>
+</div>
+
+<nav id="navMenu" class="navbar navbar-inverse ">
           <ul id="menuItems">
-            <li><a id="res" class="menuitem" >Resume</a></li>
-            <li><a id="proj" class="menuitem">Projects</a></li> 
             <li><a id="con" class="menuitem">Contact Me</a></li> 
+            <li><a id="res" class="menuitem" >Resume</a></li>
+            <li><a id="proj" class="menuitem">Projects</a></li>             
           </ul>
 </nav>
 
-<div id="contactMePanel" class="panel panel-default">
-  <div id="contactMe" class="panel-body"><p id="panel_content">Phone No: +1 404-693-6827<br><br> Email Address: ganapathy.hari.narayan@gatech.edu<br><br>Mailing Address: 930 Spring Street NW Atlanta GA 30309</p></div>
+<div id="contactMePanel" class="container-fluid">
+  <p >Phone No: +1 404-693-6827<br><br> Email Address: ganapathy.hari.narayan@gatech.edu<br><br>Mailing Address: 930 Spring Street NW Atlanta GA 30309</p>
+  
 </div>
 
-<div id="dummyPanel" class="panel panel-default">
-  <div id="dummy" class="panel-body"><p id="panel_content"></p></div>
-</div>
-
-<div id="resume" class="panel panel-default">
-  <div id="subResume" class="panel-body"><p id="panel_content">Download a pdf copy of my resume over <a target="_blank" href="/images/Resume_Final.pdf">here</a></p></div>
+<div id="resume"class="container-fluid">
+  <p >Download a pdf copy of my resume over <a target="_blank" href="/images/Resume_Final.pdf">here</a></p>
 </div>
 
 <div id="projects" class="panel panel-default" style="display: none;">
 
-   <div class="row" style="margin-top: 50px;">
+   <div class="row" style="margin-top: 90px;">
      <div class="col-md-1">
       </div>
 
@@ -90,13 +105,15 @@
 </div>
 
 
-<nav id="menu" class="navbar navbar-inverse navbar-fixed-bottom">
-  <div id="menuHolder" class="container-fluid">
-    <a id="title" class="navbar-brand">Ganapathy Hari Narayan</a>
-    <br>
-    <a id="subTit" class="navbar-brand"> (Software Developer)</a>
-  </div>
+<nav  id="TitleMenu" class="navbar navbar-inverse ">
+        <p id="mainTitle">Ganapathy Hari Narayan<br><p style="font-size: 20px;">(Software Engineer)</p></p>
+
 </nav>
+
+<script>
+  //sr.reveal('#navMenu', { duration: 500 , reset: true, origin: 'top', scale: 1.0, easing   : 'ease-in-out'}, 50);
+  //sr.reveal('#TitleMenu', { duration: 500 , reset: true, origin: 'bottom', scale: 1.0}, 50);
+</script>
 </body>
 
 </html>
