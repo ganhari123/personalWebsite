@@ -235,3 +235,22 @@ li {
 	background-color: black;
 	border-radius: 5px;
 }
+
+/* Phones and Tablets */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px) {
+
+  	#itemContainer {
+		background: none;
+		position: fixed;
+	  	top: 0%;
+	  	left: 50%;
+	  /* bring your own prefixes */
+	  	transform: translate(0%, -50%);
+	}
+
+	#nameTitle {
+		font-size: 20px;
+	}
+}
