@@ -244,13 +244,71 @@ li {
   	#itemContainer {
 		background: none;
 		position: fixed;
-	  	top: 0%;
-	  	left: 50%;
+	  	height: 100%;
+	  	width: 100%;
+	  	text-align: center;
 	  /* bring your own prefixes */
-	  	transform: translate(0%, -50%);
+	  	
 	}
 
 	#nameTitle {
 		font-size: 20px;
+	}
+
+	#positionSubtitle {
+		font-size: 18px;
+	}
+
+	.Resume {
+		width: 80%;
+		margin-bottom: 30px;
+	}
+
+	.Contact {
+		width: 80%;
+		margin-bottom: 30px;
+	}
+
+	.Project {
+		width: 80%;
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen 
+  and (min-width: 0px) 
+  and (max-width: 927px) {
+
+  	#itemContainer {
+		background: none;
+		position: fixed;
+	  	height: 100%;
+	  	width: 100%;
+	  	text-align: center;
+	  /* bring your own prefixes */
+	  	
+	}
+
+	#nameTitle {
+		font-size: 20px;
+	}
+
+	#positionSubtitle {
+		font-size: 18px;
+	}
+
+	.Resume {
+		width: 80%;
+		margin-bottom: 30px;
+	}
+
+	.Contact {
+		width: 80%;
+		margin-bottom: 30px;
+	}
+
+	.Project {
+		width: 80%;
+		margin-bottom: 30px;
 	}
 }
