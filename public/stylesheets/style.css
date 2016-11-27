@@ -310,6 +310,7 @@ li {
 		width: 90%;
 		height: 60px;
 		margin-bottom: 10px;
+		opacity: 1.0;
 		font-size: 16px;
 	}
 
@@ -317,6 +318,7 @@ li {
 		width: 90%;
 		height: 60px;
 		margin-bottom: 10px;
+		opacity: 1.0;
 		font-size: 16px;
 	}
 
@@ -324,7 +326,27 @@ li {
 		width: 90%;
 		height: 60px;
 		margin-bottom: 10px;
+		opacity: 1.0;
 		font-size: 16px;
+	}
+}
+
+@media only screen 
+  and (min-width: 0px) 
+  and (max-width: 432px) {
+
+  	.menuitem {
+  		font-size: 15px;
+  		padding-top: 30px;
+		padding-bottom: 15px;
+  	}
+
+  	.menuitem:hover {
+  		background-color: black;
+		color: gray;
+		font-size: 15px;
+		cursor: pointer;
+		text-decoration: none;
 	}
 }
 
