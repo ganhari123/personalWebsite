@@ -41,11 +41,11 @@ $(document).ready(function() {
 		$.get('/projects', function(data, status){
 	      console.log(data);
 	      $('.row > .col-md-5 > .panel.panel-default > .panel-heading').each(function(index, value){
-	        $(this).text(data.projects[index].name);
+	        $(this).text(data[index].name);
 	      });
 
 	      $('.row > .col-md-5 > .panel.panel-default > .panel-body').each(function(index, value){
-	        $(this).text(data.projects[index].description);
+	        $(this).text(data[index].description);
 	      });
 	      	$('.row > .col-md-10 > .panel.panel-default > .panel-body').text(data.projects[4].description);
 	    	$('.row > .col-md-10 > .panel.panel-default > .panel-heading').text(data.projects[4].name);
